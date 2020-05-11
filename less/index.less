@@ -19,8 +19,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -45,7 +43,7 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	// border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -57,3 +55,15 @@ html, body {
 	height: 100%;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	display: flex;
+	
+	.left {
+		display: flex;
+		flex-direction: column;
+	}
+}

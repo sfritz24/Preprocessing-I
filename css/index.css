@@ -85,8 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -124,7 +122,6 @@ q:after {
 }
 table {
   border-collapse: collapse;
-  border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
 * {
@@ -133,4 +130,14 @@ table {
 html,
 body {
   height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  display: flex;
+}
+.container .left {
+  display: flex;
+  flex-direction: column;
 }
