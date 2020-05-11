@@ -48,7 +48,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid grey;
 }
 
 html, body {
@@ -59,11 +60,38 @@ html {
 	font-size: 62.5%;
 }
 
+@h2font: 2rem;
+
 .container {
 	display: flex;
 	
 	.left {
 		display: flex;
 		flex-direction: column;
+		width: 40%;
+		align-items: center;
+		
+		.main {
+			margin: 2% 5% auto;
+
+			h2 {
+				font-size: @h2font;
+			}
+			img {
+				border-radius: 50%;
+				width: 50%;
+				height: auto;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	.right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 60%;
 	}
 }
+

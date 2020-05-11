@@ -126,6 +126,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  border: 1px solid grey;
 }
 html,
 body {
@@ -140,4 +141,26 @@ html {
 .container .left {
   display: flex;
   flex-direction: column;
+  width: 40%;
+  align-items: center;
+}
+.container .left .main {
+  margin: 2% 5% auto;
+}
+.container .left .main h2 {
+  font-size: 2rem;
+}
+.container .left .main img {
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
 }
