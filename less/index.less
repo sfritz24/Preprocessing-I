@@ -60,7 +60,9 @@ html {
 	font-size: 62.5%;
 }
 
-@h2font: 2rem;
+@h2font: 2.8rem;
+@h3font: 2.2rem;
+@detail: 1.8rem;
 
 .container {
 	display: flex;
@@ -70,13 +72,16 @@ html {
 		flex-direction: column;
 		width: 40%;
 		align-items: center;
+		margin: 1% 0;
 		
 		.main {
-			margin: 2% 5% auto;
-
+			margin: 2% 0;
+			
 			h2 {
 				font-size: @h2font;
-			}
+				margin-top: 5%;
+				margin-bottom: 5%;
+			}//end h2
 			img {
 				border-radius: 50%;
 				width: 50%;
@@ -84,14 +89,74 @@ html {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
-			}
-		}
-	}
+				margin-top: 5%;
+				margin-bottom: 20%;
+			}//end img
+			p {
+				margin: 0 2%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}//end p
+		}//end .main
+		.info {
+			display: flex;
+			flex-direction: column;
+			margin: 7% 0;
+			width: 55%;
+			.edu{
+				margin: 5% 0;
+
+				h2 {
+					font-size: @h2font;
+				}//end h2
+				h3 {
+					font-size: @h3font;
+				}//end h3
+				section {
+					margin: 5% 0;
+				}//end section
+			}//end .edu
+			.skills{
+				margin: 5% 0;
+
+				h2 {
+					font-size: @h2font;
+				}//end h2
+				li {
+					font-size: @detail;
+					width: 50%;
+					text-align: center;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}//end li
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-around;
+					margin: 2% 0;
+				}//end ul
+			}//end skills
+			.interest {
+				margin: 5% 0;
+
+				h2 {
+					font-size: @h2font;
+					margin: 5% 0;
+				}
+			}//end .interest
+		}//end .info
+	}//end .left
 	.right {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 60%;
-	}
+	}//end of .right
+}//end .container
+
+p {
+	font-size: @detail;
 }
 
