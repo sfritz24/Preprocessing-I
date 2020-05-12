@@ -179,17 +179,29 @@ html {
 .container .left .info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 7% 0;
   width: 55%;
+}
+@media (max-width: 500px) {
+  .container .left .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7% 0;
+    width: 80%;
+  }
 }
 .container .left .info .edu {
   margin: 5% 0;
 }
 .container .left .info .edu h2 {
   font-size: 2.8rem;
+  font-family: 'Dancing Script', cursive;
 }
 .container .left .info .edu h3 {
   font-size: 2.2rem;
+  font-family: 'Dancing Script', cursive;
 }
 .container .left .info .edu section {
   margin: 5% 0;
@@ -199,6 +211,7 @@ html {
 }
 .container .left .info .skills h2 {
   font-size: 2.8rem;
+  font-family: 'Dancing Script', cursive;
 }
 .container .left .info .skills li {
   font-size: 1.8rem;
@@ -219,6 +232,7 @@ html {
 }
 .container .left .info .interest h2 {
   font-size: 2.8rem;
+  font-family: 'Dancing Script', cursive;
   margin: 5% 0;
 }
 .container .right {
@@ -235,6 +249,8 @@ html {
 }
 .container .right .top h1 {
   font-size: 8rem;
+  font-family: 'Lobster', cursive;
+  color: #d96e94;
   text-align: center;
   padding: 5% 0;
 }
@@ -244,6 +260,7 @@ html {
 }
 .container .right .top section h2 {
   font-size: 2.8rem;
+  font-family: 'Dancing Script', cursive;
 }
 .container .right .top section p {
   margin-top: 2%;
@@ -267,10 +284,12 @@ html {
 }
 .container .right .bottom h2 {
   font-size: 2.8rem;
+  font-family: 'Dancing Script', cursive;
   margin: 3% 0;
 }
 .container .right .bottom h3 {
   font-size: 2.2rem;
+  font-family: 'Dancing Script', cursive;
 }
 .container .right .bottom h4 {
   font-size: 2rem;

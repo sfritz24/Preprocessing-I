@@ -60,16 +60,28 @@ html {
 	font-size: 62.5%;
 }
 
-@h2font: 2.8rem;
-@h3font: 2.2rem;
+//variables
 @detail: 1.8rem;
 @color-scheme: pink;
 @acent-color: #d96e94;
 
+//mixins
 .h2font() {
 	font-size: 2.8rem;
 	font-family: 'Dancing Script', cursive;
 }
+
+.h3font() {
+	font-size: 2.2rem;
+	font-family: 'Dancing Script', cursive;
+}
+
+.h1font() {
+	font-size: 8.0rem;
+	font-family: 'Lobster', cursive;
+	color: @acent-color;
+}
+//end mixins
 
 .container {
 	display: flex;
@@ -85,7 +97,6 @@ html {
 			margin: 2% 0;
 
 			h2 {
-				//font-size: @h2font;
 				.h2font();
 				margin-top: 5%;
 				margin-bottom: 5%;
@@ -116,17 +127,26 @@ html {
 		.info {
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 			margin: 7% 0;
 			width: 55%;
+
+			@media (max-width: 500px) {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 7% 0;
+				width: 80%;
+			}
 
 			.edu{
 				margin: 5% 0;
 
 				h2 {
-					font-size: @h2font;
+					.h2font();
 				}//end h2
 				h3 {
-					font-size: @h3font;
+					.h3font();
 				}//end h3
 				section {
 					margin: 5% 0;
@@ -136,7 +156,7 @@ html {
 				margin: 5% 0;
 
 				h2 {
-					font-size: @h2font;
+					.h2font();
 				}//end h2
 				li {
 					font-size: @detail;
@@ -157,7 +177,7 @@ html {
 				margin: 5% 0;
 
 				h2 {
-					font-size: @h2font;
+					.h2font();
 					margin: 5% 0;
 				}//end h2
 			}//end .interest
@@ -176,7 +196,7 @@ html {
 			margin-bottom: 5%;
 
 			h1{
-				font-size: 8.0rem;
+				.h1font();
 				text-align: center;
 				padding: 5% 0;
 			}//end h1
@@ -185,7 +205,7 @@ html {
 				margin: 0 5%;
 
 				h2 {
-					font-size: @h2font;
+					.h2font();
 				}//end h2
 				p {
 					margin-top: 2%;
@@ -213,11 +233,11 @@ html {
 			padding: 0 5%;
 
 			h2 {
-				font-size: @h2font;
+				.h2font();
 				margin: 3% 0;
 			}//end h2
 			h3 {
-				font-size: @h3font;
+				.h3font();
 			}//end h3
 			h4 {
 				font-size: 2rem;
@@ -235,4 +255,3 @@ html {
 p {
 	font-size: @detail;
 }
-
