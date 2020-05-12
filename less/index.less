@@ -131,11 +131,11 @@ html {
 			margin: 7% 0;
 			width: 55%;
 
-			@media (max-width: 500px) {
+			@media (max-width:500px) {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				margin: 7% 0;
+				margin: 0 0;
 				width: 80%;
 			}
 
@@ -254,4 +254,14 @@ html {
 
 p {
 	font-size: @detail;
+}
+
+@media (max-width:500px) {
+	.container .left section .info{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 0;
+		width: 80%;
+	}
 }
