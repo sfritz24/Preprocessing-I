@@ -63,22 +63,30 @@ html {
 @h2font: 2.8rem;
 @h3font: 2.2rem;
 @detail: 1.8rem;
+@color-scheme: pink;
+@acent-color: #d96e94;
+
+.h2font() {
+	font-size: 2.8rem;
+	font-family: 'Dancing Script', cursive;
+}
 
 .container {
 	display: flex;
-	
+
 	.left {
 		display: flex;
 		flex-direction: column;
 		width: 40%;
 		align-items: center;
-		margin: 1% 0;
-		
+		background-color: @color-scheme;
+
 		.main {
 			margin: 2% 0;
-			
+
 			h2 {
-				font-size: @h2font;
+				//font-size: @h2font;
+				.h2font();
 				margin-top: 5%;
 				margin-bottom: 5%;
 			}//end h2
@@ -98,12 +106,19 @@ html {
 				justify-content: space-between;
 				align-items: center;
 			}//end p
+			i {
+				color: @acent-color;
+			}//end i
+			a {
+				color: @acent-color;
+			}
 		}//end .main
 		.info {
 			display: flex;
 			flex-direction: column;
 			margin: 7% 0;
 			width: 55%;
+
 			.edu{
 				margin: 5% 0;
 
@@ -144,7 +159,7 @@ html {
 				h2 {
 					font-size: @h2font;
 					margin: 5% 0;
-				}
+				}//end h2
 			}//end .interest
 		}//end .info
 	}//end .left
@@ -153,6 +168,67 @@ html {
 		flex-direction: column;
 		align-items: center;
 		width: 60%;
+
+		.top {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 5%;
+
+			h1{
+				font-size: 8.0rem;
+				text-align: center;
+				padding: 5% 0;
+			}//end h1
+			section {
+				padding: 2% 0;
+				margin: 0 5%;
+
+				h2 {
+					font-size: @h2font;
+				}//end h2
+				p {
+					margin-top: 2%;
+				}//end p
+			}//end section
+			nav {
+				margin: 2% 5%;
+
+				a {
+					font-size: @detail;
+					margin: 2%;
+
+				}//end a
+				i {
+					color: @color-scheme;
+
+					&:hover {
+						color: @acent-color;
+					}
+				}//end i
+			}//end nav
+		}//end .top
+		.bottom {
+			width: 100%;
+			padding: 0 5%;
+
+			h2 {
+				font-size: @h2font;
+				margin: 3% 0;
+			}//end h2
+			h3 {
+				font-size: @h3font;
+			}//end h3
+			h4 {
+				font-size: 2rem;
+			}//end h4
+			section {
+				margin-left: 5%;
+			}//end section
+			div {
+				margin-bottom: 7%;
+			}
+		}//end .bottom
 	}//end of .right
 }//end .container
 
